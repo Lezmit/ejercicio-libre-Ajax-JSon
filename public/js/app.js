@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#boton").click(function(){
-        $.getJSON("https//localhost:2034/demo.json", function(response){
+        $.getJSON("https://localhost:2034/demo.json", function(response){
            var fundadores ="<ul>";
            for(i=0,l=response.fundadores.length; i<l;i++){
                fundadores+="<li>"+response.fundadores[i]+"</li>";
